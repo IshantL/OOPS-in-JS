@@ -78,6 +78,21 @@ return {
 }
 const circle =  createCircle(10);
 circle.draw();
+
+//using constructor function
+function createCircle (radius){
+    this.radius =radius;
+    this.draw:function(){
+        console.log('draw');
+    }
+};
+}
+const circle =  new createCircle(10);
+circle.draw();
+//the new keyword hereit create an empty object then it will set 'this' to point to that object.
+when new added -> 'this' refers to cirle object,
+if new removes-> 'this' refers to windows object.
+
 ```
 3. Primitive and Reference Types
 4. Working with properties
