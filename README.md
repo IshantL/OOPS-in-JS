@@ -129,6 +129,8 @@ a. Object
 b. Function
 c. Array
 
+Primitives are copy by value, reference type are copied by reference.
+
 4. Working with properties
 5. Private Properties
 6. Getters/ Setters
