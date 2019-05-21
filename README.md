@@ -115,6 +115,20 @@ This is same as using new operator where new operator create the object and refe
 .apply() is same as .call() but the arguments are in array.
 
 3. Primitive and Reference Types
+
+Value type:
+a. Number
+b. String
+c. Boolean
+d. Symbol
+e. undefined
+f. null
+
+Reference type:
+a. Object
+b. Function
+c. Array
+
 4. Working with properties
 5. Private Properties
 6. Getters/ Setters
