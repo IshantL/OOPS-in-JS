@@ -94,6 +94,9 @@ when new added -> 'this' refers to cirle object,
 if new removes-> 'this' refers to windows object.
 
 ```
+Every object has constructor property and 
+object.constructor returns the function who create that object.
+
 3. Primitive and Reference Types
 4. Working with properties
 5. Private Properties
