@@ -45,7 +45,7 @@ circle.draw();
 ```
 So object literal syntax is not a good way to create and to duplicate if this object has atleast one method,  if an object have more than one method then we will say that object has behavior like a person that do different things.
 
-if we delete the draw method and duplicate it then there is no probem to duplicate using object literal.
+if we delete the draw method and duplicate it then there is no probem to duplicate using object literal but for method the problem occurs.
 ```
 const circle = {
     radius:1,
@@ -66,7 +66,19 @@ const circle = {
 circle.draw();
 ```
 So the solution is to use factory or constructor function
-
+```
+//using factory function
+function createCircle (radius){
+return {
+    radius,
+     draw:function(){
+        console.log('draw');
+    }
+};
+}
+const circle =  createCircle(10);
+circle.draw();
+```
 3. Primitive and Reference Types
 4. Working with properties
 5. Private Properties
