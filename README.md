@@ -132,5 +132,20 @@ c. Array
 Primitives are copy by value, reference type are copied by reference.
 
 4. Working with properties
+
+circle.location = {x:1}
+circle[location] ={x:1}
+
+use case:1. when we want dunamic access then
+
+const propertyname = "location";
+circle[propertyname]
+
+case 2: when there is special character in the property name
+const propertyname = "center-location";
+circle[propertyname]
+
+to iterate we have for-in loop
+
 5. Private Properties
 6. Getters/ Setters
