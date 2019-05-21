@@ -97,6 +97,23 @@ if new removes-> 'this' refers to windows object.
 Every object has constructor property and 
 object.constructor returns the function who create that object.
 
+So even if we create a function then how why it have constructor property?
+This is because internally JS will do like this:
+```
+const circle = new function createCircle ('radius',' this.radius =radius;
+    this.draw:function(){
+        console.log('draw');
+    }
+    ');
+```
+methods avialable in objects
+.call()
+e.g circle.call({},1)
+This is for invocation here the first parameter is object which is referenced to 'this'.i,e the target of 'this'.
+This is same as using new operator where new operator create the object and reference it to 'this'.
+
+.apply() is same as .call() but the arguments are in array.
+
 3. Primitive and Reference Types
 4. Working with properties
 5. Private Properties
