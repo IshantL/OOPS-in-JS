@@ -1,4 +1,4 @@
-# OOPS-in-JS
+# OOPS in JavaScript
 
 ## Objects
 1. Creating Objects:
