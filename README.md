@@ -149,3 +149,4 @@ to iterate we have for-in loop
 
 5. Private Properties
 6. Getters/ Setters
+7. Prototype
