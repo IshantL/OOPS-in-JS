@@ -655,3 +655,4 @@ hide the internal details and show only functionality to the users.
 if we expose all the methods of the object to the user they can mess up the object bu adding unwanted things. So for this we have provate properties and methods.
 
 - Private properties and methods.
+Object.define propertoies to add getter nd setters
