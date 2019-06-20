@@ -646,3 +646,7 @@ When we want to dynamically access the property name then we can use the compute
 if name of the property is not valid identifier then also it is benificial to use the computed property.
 
 - Enumerating Properties
+for iterating we have for in loop 
+and to check whether the object have the property we can use if( a in obj)
+
+- Abstraction
