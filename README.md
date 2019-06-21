@@ -641,4 +641,8 @@ function
 Premitives are copied by value and Reference type are copied by reference.
 
 - Adding or Removing properties
+we can add or remove the properties in js on fly .
+When we want to dynamically access the property name then we can use the computed property.[]
+if name of the property is not valid identifier then also it is benificial to use the computed property.
+
 - Enumerating Properties
