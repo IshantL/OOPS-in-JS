@@ -638,5 +638,7 @@ Array
 Object 
 function
 
+Premitives are copied by value and Reference type are copied by reference.
+
 - Adding or Removing properties
 - Enumerating Properties
