@@ -621,6 +621,8 @@ new Boolean(), new Number();
 
 ```
 - Functions are Objects
+
+when we  function to create object then the constructor refers to f Function(){}
 - Value vs Reference types
 - Adding or Removing properties
 - Enumerating Properties
