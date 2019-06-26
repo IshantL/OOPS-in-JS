@@ -611,6 +611,14 @@ another.constructor
 
 circle.constructor
 >f Object() { [native code]}
+built in constructor function in js
+e.g
+let x ={}
+//let x = new Object(); //internally
+
+new String() // we used '' "" internally it using new String();
+new Boolean(), new Number();
+
 ```
 - Functions are Objects
 - Value vs Reference types
