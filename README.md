@@ -579,9 +579,39 @@ An immediately-invoked function expression (IIFE) is a function that is called i
 
 Object oriented javaScipt topics
 - Object Literals
-- Factorie
+- Factories
 - Constructors
 - Constructor Property
+```
+//using factory function
+function createCircle (radius){
+return {
+    radius,
+     draw:function(){
+        console.log('draw');
+    }
+};
+}
+const circle =  createCircle(10);
+
+//using constructor function
+function createCircle (radius){
+    this.radius =radius;
+    this.draw:function(){
+        console.log('draw');
+    }
+};
+
+const another = new Circle(1);
+//In console
+another.constructor
+>f Circle(Radius){
+  ...
+}
+
+circle.constructor
+>f Object() { [native code]}
+```
 - Functions are Objects
 - Value vs Reference types
 - Adding or Removing properties
