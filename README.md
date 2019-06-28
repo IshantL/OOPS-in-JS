@@ -576,6 +576,7 @@ When a function is declared, it locks onto the scope chain. You might think this
 An immediately-invoked function expression (IIFE) is a function that is called immediately after it is defined. Utilizing an IIFE alongside closures allows for a private scope, which maintains privacy for variables defined within them. And since less variables are created, an IIFE will help to minimize pollution of the global environment, hindering the chances of variable name collisions.
 
 17. OOPS
+
 Object oriented javaScipt topics
 - Object Literals
 - Factorie
