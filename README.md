@@ -577,3 +577,11 @@ An immediately-invoked function expression (IIFE) is a function that is called i
 
 17. OOPS
 Object oriented javaScipt topics
+- Object Literals
+- Factorie
+- Constructors
+- Constructor Property
+- Functions are Objects
+- Value vs Reference types
+- Adding or Removing properties
+- Enumerating Properties
