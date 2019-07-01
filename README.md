@@ -461,7 +461,8 @@ each([-2, 7, 11, -4, -10], isPositive);
 //7, 11
 
 ```
-Array Methods
+14. Array Methods
+
 Where have you probably seen callback functions used? In array methods! Functions are commonly passed into array methods and called on elements within an array (i.e., the array on which the method was called).
 
 
@@ -541,7 +542,7 @@ const results = musicData.filter(function(temp){
 
 console.log(results);
 ```
-14. Closure
+15. Closure
 ```
 function remember(number) {
     return function() {
