@@ -438,7 +438,7 @@ const higherOrderFunction = function(){
 }
 
 ```
-13.Callback Functions
+13. Callback Functions
 
 Recall that JavaScript functions are first-class functions. We can do with functions just about everything we can do with other values -- including passing them into other functions! A function that takes other functions as arguments (and/or returns a function, as we learned in the previous section) is known as a higher-order function. A function that is passed as an argument into another function is called a callback function.
 
