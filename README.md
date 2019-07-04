@@ -390,7 +390,7 @@ bicycle.myVariable;
 
 It may seem odd, but recall that all property keys in a JavaScript object are strings, even if the quotation marks are omitted. With dot notation, the JavaScript interpreter looks for a key within bicycle whose value is 'myVariable'. Since there isn't such a key defined in the object, the expression returns undefined.
 
-10.Things that Belong to Objects
+11. Things that Belong to Objects
 
 this and Invocation
 How the function is invoked determines the value of this inside the function. ← That sentence is really important, so read that two more times...we'll wait!
