@@ -313,7 +313,7 @@ c. Array
 
 Primitives are copy by value, reference type are copied by reference.
 
-8. Working with properties
+9. Working with properties
 
 circle.location = {x:1}
 circle[location] ={x:1}
@@ -329,7 +329,7 @@ circle[propertyname]
 
 to iterate we have for-in loop
 
-Exercise:
+- Exercise:
 ```
 /*
 Create an object called `menu` that represents the following menu item:
@@ -353,7 +353,7 @@ const menu = {
 }
 ```
 
-9.⚠️ Dot Notation Limitations ⚠️
+10.⚠️ Dot Notation Limitations ⚠️
 
 ```
 const bicycle = {
