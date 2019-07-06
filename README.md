@@ -190,7 +190,7 @@ const chameleon ={
 }
 ```
 
-2. Factories and Constructors
+7. Factories and Constructors
 - Suppose we want to create another Circle for that we need to duplicate the circle and if some method of circle have bug in it then we need to change all the methods.
 ```
 const circle = {
@@ -288,7 +288,7 @@ This is same as using new operator where new operator create the object and refe
 
 .apply() is same as .call() but the arguments are in array.
 
-7. Primitive and Reference Types
+8. Primitive and Reference Types
 
 Value type:
 
