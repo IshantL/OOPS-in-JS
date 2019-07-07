@@ -172,7 +172,7 @@ When the identify() method is called, the value of this is set to the object it 
 
 Note that this is a reserved word in JavaScript, and cannot be used as an identifier (e.g. variable names, function names, etc.).
 
-Exercise
+- Exercise
 ```
 /*
 Create an object called `chameleon` with two properties:
