@@ -91,7 +91,7 @@ originalObject.favoriteColor;
 ```
 5. Comparing an Object with Another Object
 
-As object are pass by reference if two a objectB is copy of objectA then
+As object are pass by reference if two objects e.g objectB is copy of objectA then
 objectA===objectB // true
 else
 objectA === ObjectC //false
