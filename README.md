@@ -1,20 +1,18 @@
 # OOPS in JavaScript
 
 ## Objects
+
 1. Creating Objects:
 
 ```
 // Using literal notation:
-
 const myObject = {};
 
 // Using the Object() constructor function:
-
 const myObject = new Object();
 
-```
 //using object literal 
-```
+
 const circle = {
     radius:1,
     location:{
