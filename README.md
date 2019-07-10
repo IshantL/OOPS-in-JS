@@ -27,7 +27,7 @@ circle.draw();
 ```
 2. Adding Properties
 
-Properties can be added to objects simply by specifying the property name, then giving it a value. Let's start off with a blank object, then add two properties:
+- Properties can be added to objects simply by specifying the property name, then giving it a value. - Let's start off with a blank object, then add two properties:
 ```
 const printer = {};
 printer.on = true;
