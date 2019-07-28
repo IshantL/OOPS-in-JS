@@ -31,6 +31,19 @@ printer.print = function () {
   console.log('The printer is printing!');
 };
 ```
+Removing Properties
+Recall that since objects are mutable, not only can we modify existing properties (or even add new ones) -- we can also delete properties from objects.
+
+Say that the printer object above actually doesn't have any modes (i.e., 'black and white', 'color', etc.). We can go ahead and remove that property from printer using the delete operator.
+```
+delete printer.mode;
+```
+Note that delete directly mutates the object at hand. If we try to access a deleted property, the JavaScript interpreter will no longer be able to find the mode property because the mode key (along with its value, true) have been deleted:
+```
+printer.mode;
+
+// undefined
+```
 - We are using object literal for that
 ```
 const circle = {
