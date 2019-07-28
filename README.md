@@ -2,6 +2,17 @@
 
 ## Objects
 1. Creating Objects:
+
+```
+// Using literal notation:
+
+const myObject = {};
+
+// Using the Object() constructor function:
+
+const myObject = new Object();
+
+```
 - We are using object literal for that
 ```
 const circle = {
