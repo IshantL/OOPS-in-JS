@@ -181,3 +181,40 @@ const menu = {
     ingredients: ['butter', 'ice cream', 'salt', 'sugar']
 }
 ```
+
+⚠️ Dot Notation Limitations ⚠️
+
+```
+const bicycle = {
+  color: 'blue',
+  type: 'mountain bike',
+  wheels: {
+    diameter: 18,
+    width: 8
+  }
+};
+
+```
+Note that while dot notation may be easier to read and write, it can't be used in every situation. For example, let's say there's a key in the above bicycle object that is a number. An expression like bicycle.1; will cause a error, while bicycle[1]; returns the intended value:
+
+bicycle.1;
+
+// Uncaught SyntaxError: Unexpected number
+
+bicycle[1];
+
+// (returns the value of the `1` property)
+Another issue is when variables are assigned to property names. Let's say we declare myVariable, and assign it to the string 'color':
+
+const myVariable = 'color';
+bicycle[myVariable]; returns 'blue' because the variable myVariable gets substituted with its value (the string 'color') and bicycle['color']'s value is 'blue'. However, bicycle.myVariable; returns undefined:
+
+bicycle[myVariable];
+
+// 'blue'
+
+bicycle.myVariable;
+
+// undefined
+
+It may seem odd, but recall that all property keys in a JavaScript object are strings, even if the quotation marks are omitted. With dot notation, the JavaScript interpreter looks for a key within bicycle whose value is 'myVariable'. Since there isn't such a key defined in the object, the expression returns undefined.
