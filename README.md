@@ -439,3 +439,26 @@ const higherOrderFunction = function(){
 }
 
 ```
+13.Callback Functions
+
+Recall that JavaScript functions are first-class functions. We can do with functions just about everything we can do with other values -- including passing them into other functions! A function that takes other functions as arguments (and/or returns a function, as we learned in the previous section) is known as a higher-order function. A function that is passed as an argument into another function is called a callback function.
+
+We'll be focusing on callbacks in this section. Callback functions are great because they can delegate calling functions to other functions. They allow you to build your applications with composition, leading to cleaner and more efficient code.
+```
+function each(array, callback) {
+  for (let i = 0; i < array.length; i++) {
+    if (callback(array[i])) {
+      console.log(array[i]);
+    }
+  }
+}
+function isPositive(n) {
+  return n > 0;
+};
+The following is then executed:
+
+each([-2, 7, 11, -4, -10], isPositive);
+//What is outputted to the console?
+//7, 11
+
+```
