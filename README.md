@@ -77,6 +77,18 @@ setToBlue(originalObject);
 originalObject.favoriteColor;
 // 'blue'
 ```
+5. Comparing an Object with Another Object
+
+As object are pass by reference if two a objectB is copy of objectA then
+objectA===objectB // true
+else
+objectA === ObjectC //false
+
+
+
+
+
+
 - We are using object literal for that
 ```
 const circle = {
