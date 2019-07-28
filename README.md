@@ -118,15 +118,22 @@ This is same as using new operator where new operator create the object and refe
 
 Value type:
 a. Number
+
 b. String
+
 c. Boolean
+
 d. Symbol
+
 e. undefined
+
 f. null
 
 Reference type:
 a. Object
+
 b. Function
+
 c. Array
 
 Primitives are copy by value, reference type are copied by reference.
@@ -150,3 +157,4 @@ to iterate we have for-in loop
 5. Private Properties
 6. Getters/ Setters
 7. Prototype
+
