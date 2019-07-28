@@ -174,6 +174,23 @@ When the identify() method is called, the value of this is set to the object it 
 
 Note that this is a reserved word in JavaScript, and cannot be used as an identifier (e.g. variable names, function names, etc.).
 
+Exercise
+```
+/*
+Create an object called `chameleon` with two properties:
+
+1. `color`, whose value is initially set to 'green' or 'pink'
+2. `changeColor`, a function which changes `chameleon`'s `color` to 'pink'
+    if it is 'green', or to 'green' if it is 'pink'
+
+*/
+const chameleon ={
+    color : 'green',
+    changeColor: function(){
+        this.color === 'green' ? this.color = 'pink': this.color ='pink';
+    }
+}
+```
 
 2. Factories and Constructors
 - Suppose we want to create another Circle for that we need to duplicate the circle and if some method of circle have bug in it then we need to change all the methods.
