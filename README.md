@@ -155,7 +155,24 @@ greeter.greet();
 ```
 Named functions are great for a smoother debugging experience, since those functions will have a useful name to display in stack traces. They're completely optional, however, and you'll often read code written by developers who prefer one way or the other.
 
+Using this, methods can directly access the object that it is called on. Consider the following object, triangle:
+```
+const triangle = {
+  type: 'scalene',
+  identify: function () {
+    console.log(`This is a ${this.type} triangle.`);
+  }
+};
+```
+Note that inside the identify() method, the value this is used. When you say this, what you're really saying is "this object" or "the object at hand." this is what gives the identify() method direct access to the triangle object's properties:
+```
+triangle.identify();
 
+// 'This is a scalene triangle.'
+```
+When the identify() method is called, the value of this is set to the object it was called on: triangle. As a result, the identify() method can access and use triangle's type property, as seen in the above console.log() expression.
+
+Note that this is a reserved word in JavaScript, and cannot be used as an identifier (e.g. variable names, function names, etc.).
 
 
 2. Factories and Constructors
