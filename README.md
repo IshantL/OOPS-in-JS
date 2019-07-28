@@ -420,3 +420,4 @@ Be stored in variables
 Be returned from a function.
 Be passed as arguments into another function.
 Note that while we can, say, treat a function as an object, a key difference between a function and an object is that functions can be called (i.e., invoked with ()), while regular objects cannot.
+
