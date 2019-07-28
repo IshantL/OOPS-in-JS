@@ -13,7 +13,7 @@ const myObject = {};
 const myObject = new Object();
 
 ```
-Adding Properties
+2. Adding Properties
 
 Properties can be added to objects simply by specifying the property name, then giving it a value. Let's start off with a blank object, then add two properties:
 ```
@@ -31,7 +31,7 @@ printer.print = function () {
   console.log('The printer is printing!');
 };
 ```
-Removing Properties
+3. Removing Properties
 Recall that since objects are mutable, not only can we modify existing properties (or even add new ones) -- we can also delete properties from objects.
 
 Say that the printer object above actually doesn't have any modes (i.e., 'black and white', 'color', etc.). We can go ahead and remove that property from printer using the delete operator.
@@ -43,6 +43,39 @@ Note that delete directly mutates the object at hand. If we try to access a dele
 printer.mode;
 
 // undefined
+```
+4. Passing Arguments
+
+- Passing a Primitive
+In JavaScript, a primitive (e.g., a string, number, boolean, etc.) is immutable. In other words, any changes made to an argument inside a function effectively creates a copy local to that function, and does not affect the primitive outside of that function. Check out the following example:
+```
+function changeToEight(n) {
+  n = 8; // whatever n was, it is now 8... but only in this function!
+}
+
+let n = 7;
+
+changeToEight(n);
+
+console.log(n);
+// 7
+
+```
+- Passing an Object
+On the other hand, objects in JavaScript are mutable. If you pass an object into a function, Javascript passes a reference to that object. Let's see what happens if we pass an object into a function and then modify a property:
+```
+let originalObject = {
+  favoriteColor: 'red'
+};
+
+function setToBlue(object) {
+  object.favoriteColor = 'blue';
+}
+
+setToBlue(originalObject);
+
+originalObject.favoriteColor;
+// 'blue'
 ```
 - We are using object literal for that
 ```
