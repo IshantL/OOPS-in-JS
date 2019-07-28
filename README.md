@@ -85,10 +85,44 @@ else
 objectA === ObjectC //false
 
 
+6. Functions vs. Methods
 
+Now, say that we also have a developer object with a single property, name:
+```
+const developer = {
+  name: 'Andrew'
+};
+```
+If we want to add the sayHello() function into the developer object, we can add the same way as we add other new properties: by providing property name, then giving it a value. This time, the value of the property is a function!
+```
+developer.sayHello = function () {
+  console.log('Hi there!');
+};
+```
+To Invoke
+```
+developer.sayHello();
+// 'Hi there!'
 
+developer['sayHello']();
+// 'Hi there!'
+```
+Passing Arguments Into Methods
+If the method takes arguments, you can proceed the same way, too:
+```
+const developer = {
+  name: 'Andrew',
+  sayHello: function () {
+    console.log('Hi there!');
+  },
+  favoriteLanguage: function (language) {
+    console.log(`My favorite programming language is ${language}`);
+  }
+};
 
-
+```
+developer.favoriteLanguage('JavaScript');
+// My favorite programming language is JavaScript'
 - We are using object literal for that
 ```
 const circle = {
