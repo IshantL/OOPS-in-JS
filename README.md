@@ -13,6 +13,20 @@ const myObject = {};
 const myObject = new Object();
 
 ```
+//using object literal 
+```
+const circle = {
+    radius:1,
+    location:{
+        x:1,
+        y:1
+    },
+    draw:function(){
+        console.log('draw');
+    }
+}
+circle.draw();
+```
 2. Adding Properties
 
 Properties can be added to objects simply by specifying the property name, then giving it a value. Let's start off with a blank object, then add two properties:
@@ -120,23 +134,30 @@ const developer = {
   }
 };
 
-```
 developer.favoriteLanguage('JavaScript');
 // My favorite programming language is JavaScript'
-- We are using object literal for that
+
 ```
-const circle = {
-    radius:1,
-    location:{
-        x:1,
-        y:1
-    },
-    draw:function(){
-        console.log('draw');
-    }
-}
-circle.draw();
+💡 Call Methods by Property Name 💡
+We've been using anonymous functions (i.e., functions without a name) for object methods. However, naming those functions is still valid JavaScript syntax. Consider the following object, greeter:
 ```
+const greeter = {
+  greet: function sayHello() {
+    console.log('Hello!');
+  }
+};
+```
+Note that the greet property points to a function with a name: sayHello. Whether this function is named or not, greet is invoked the same way:
+```
+greeter.greet();
+
+// 'Hello!'
+```
+Named functions are great for a smoother debugging experience, since those functions will have a useful name to display in stack traces. They're completely optional, however, and you'll often read code written by developers who prefer one way or the other.
+
+
+
+
 2. Factories and Constructors
 - Suppose we want to create another Circle for that we need to duplicate the circle and if some method of circle have bug in it then we need to change all the methods.
 ```
