@@ -13,6 +13,24 @@ const myObject = {};
 const myObject = new Object();
 
 ```
+Adding Properties
+
+Properties can be added to objects simply by specifying the property name, then giving it a value. Let's start off with a blank object, then add two properties:
+```
+const printer = {};
+printer.on = true;
+printer.mode = 'black and white';
+```
+The above example uses dot notation to add properties, but keep in mind that square bracket notation works just as well:
+```
+printer['remainingSheets'] = 168;
+```
+Likewise, we can add a method to the printer object in a similar manner. This time, the value of the property is an anonymous (i.e., unnamed) function:
+```
+printer.print = function () {
+  console.log('The printer is printing!');
+};
+```
 - We are using object literal for that
 ```
 const circle = {
