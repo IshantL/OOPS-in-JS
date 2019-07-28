@@ -409,3 +409,8 @@ whoThis();
 Well, there is no dot. And there is no object left of the dot. So what is the value of this inside the whoThis() function? This is an interesting part of the JavaScript language.
 
 When a regular function is invoked, the value of this is the global window object.
+
+11. Globals and var, let, and const
+Only declaring variables with the var keyword will add them to the window object. If you declare a variable outside of a function with either let or const, it will not be added as a property to the window object.
+
+12.
