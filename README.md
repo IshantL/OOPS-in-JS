@@ -290,7 +290,7 @@ This is same as using new operator where new operator create the object and refe
 
 .apply() is same as .call() but the arguments are in array.
 
-3. Primitive and Reference Types
+7. Primitive and Reference Types
 
 Value type:
 a. Number
@@ -314,7 +314,7 @@ c. Array
 
 Primitives are copy by value, reference type are copied by reference.
 
-4. Working with properties
+8. Working with properties
 
 circle.location = {x:1}
 circle[location] ={x:1}
@@ -329,10 +329,6 @@ const propertyname = "center-location";
 circle[propertyname]
 
 to iterate we have for-in loop
-
-5. Private Properties
-6. Getters/ Setters
-7. Prototype
 
 Exercise:
 ```
@@ -358,7 +354,7 @@ const menu = {
 }
 ```
 
-⚠️ Dot Notation Limitations ⚠️
+9.⚠️ Dot Notation Limitations ⚠️
 
 ```
 const bicycle = {
@@ -394,3 +390,22 @@ bicycle.myVariable;
 // undefined
 
 It may seem odd, but recall that all property keys in a JavaScript object are strings, even if the quotation marks are omitted. With dot notation, the JavaScript interpreter looks for a key within bicycle whose value is 'myVariable'. Since there isn't such a key defined in the object, the expression returns undefined.
+
+10.Things that Belong to Objects
+
+this and Invocation
+How the function is invoked determines the value of this inside the function. ← That sentence is really important, so read that two more times...we'll wait!
+
+Because .lookAround() is invoked as a method, the value of this inside of .lookAround() is whatever is left of the dot at invocation. Since the invocation looks like:
+```
+chameleon.lookAround();
+```
+The chameleon object is left of the dot. Therefore, inside the .lookAround() method, this will refer to the chameleon object!
+
+Now let's compare that with the whoThis() function. Since it is called as a regular function (i.e., not called as an method on an object), its invocation looks like:
+```
+whoThis();
+```
+Well, there is no dot. And there is no object left of the dot. So what is the value of this inside the whoThis() function? This is an interesting part of the JavaScript language.
+
+When a regular function is invoked, the value of this is the global window object.
