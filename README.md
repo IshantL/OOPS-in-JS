@@ -474,4 +474,17 @@ Array's forEach() method takes in a callback function and invokes that function 
 array.forEach(function callback(currentValue, index, array) {
     // function code here
 });
+
+const logIfEven = function(n){
+if(n % 2 === 0){
+console.log(n);
+}
+}
+
+[1, 5, 2, 4, 6, 3].forEach(logIfEven);
+[1, 5, 2, 4, 6, 3].forEach( function(n){
+  if(n % 2 === 0){
+  console.log(n);
+}
+})
 ```
