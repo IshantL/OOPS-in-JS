@@ -293,6 +293,7 @@ This is same as using new operator where new operator create the object and refe
 7. Primitive and Reference Types
 
 Value type:
+
 a. Number
 
 b. String
@@ -461,4 +462,16 @@ each([-2, 7, 11, -4, -10], isPositive);
 //What is outputted to the console?
 //7, 11
 
+```
+Array Methods
+Where have you probably seen callback functions used? In array methods! Functions are commonly passed into array methods and called on elements within an array (i.e., the array on which the method was called).
+
+
+forEach()
+Array's forEach() method takes in a callback function and invokes that function for each element in the array. In other words, forEach() allows you to iterate (i.e., loop) through an array, similar to using a for loop. Check out its signature:
+
+```
+array.forEach(function callback(currentValue, index, array) {
+    // function code here
+});
 ```
