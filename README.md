@@ -488,3 +488,16 @@ console.log(n);
 }
 })
 ```
+
+map()
+Array's map() method is similar to forEach() in that it invokes a callback function for each element in an array. However, map() returns a new array based on what's returned from the callback function.
+
+```
+const names = ['David', 'Richard', 'Veronika'];
+
+const nameLengths = names.map(function(name) {
+  return name.length;
+});
+
+```
+So nameLengths will be a new array: [5, 7, 8]. Again, it is important to understand that the map() method returns a new array; it does not modify the original array.
