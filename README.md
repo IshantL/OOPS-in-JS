@@ -573,4 +573,5 @@ The code (but more importantly, the scope chain of) where the function is declar
 When a function is declared, it locks onto the scope chain. You might think this is pretty straightforward since we just looked at that in the previous section. What's really interesting about a function, though, is that it will retain this scope chain -- even if it is invoked in a location other than where it was declared. This is all due to the closure!
 
 15. IIFE
+
 An immediately-invoked function expression (IIFE) is a function that is called immediately after it is defined. Utilizing an IIFE alongside closures allows for a private scope, which maintains privacy for variables defined within them. And since less variables are created, an IIFE will help to minimize pollution of the global environment, hindering the chances of variable name collisions.
