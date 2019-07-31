@@ -543,3 +543,31 @@ const results = musicData.filter(function(temp){
 
 console.log(results);
 ```
+14. Closure
+```
+function remember(number) {
+    return function() {
+        return number;
+    }
+}
+
+const returnedFunction = remember(5);
+
+console.log( returnedFunction() );
+// 5
+```
+When the Javascript engine enters remember(), it creates a new execution scope that points back to the prior execution scope. This new scope includes a reference to the number parameter (an immutable Number with the value 5). When the engine reaches the inner function (a function expression), it attaches a link to the current execution scope.
+
+This process of a function retaining access to its scope is called a closure. In this example, the inner function "closes over" number. A closure can capture any number of parameters and variables that it needs. MDN defines a closure as:
+
+"the combination of a function and the lexical environment within which that function was declared."
+
+This definition might not make a lot of sense if you don't know what the words "lexical environment" mean. The ES5 spec refers to a lexical environment as:
+
+"the association of Identifiers to specific variables and functions based upon the lexical nesting structure of ECMAScript code."
+
+In this case, the "lexical environment" refers the code as it was written in the JavaScript file. As such, a closure is:
+
+The function itself, and
+The code (but more importantly, the scope chain of) where the function is declared
+When a function is declared, it locks onto the scope chain. You might think this is pretty straightforward since we just looked at that in the previous section. What's really interesting about a function, though, is that it will retain this scope chain -- even if it is invoked in a location other than where it was declared. This is all due to the closure!
